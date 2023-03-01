@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-nhaz
+  namespace: shbose-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:85ec7e265b73cbe2a9ff027e10a88dfad3eeedabfff69c6159cf7289b2b9ee95
+        name: container-image
+        resources: {}
+status: {}
