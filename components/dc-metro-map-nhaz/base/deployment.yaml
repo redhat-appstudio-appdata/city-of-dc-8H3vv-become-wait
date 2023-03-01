@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: dc-metro-map-nhaz
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:8H3vv-dc-metro-map-nhaz
+      - image: quay.io/redhat-appstudio/user-workload@sha256:85ec7e265b73cbe2a9ff027e10a88dfad3eeedabfff69c6159cf7289b2b9ee95
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
